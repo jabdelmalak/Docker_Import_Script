@@ -1,10 +1,10 @@
 #!bin/bash
 
-dockerfile=$(pwd)/docker_20.10.5_armhf.ipk
+#dockerfile=$(pwd)/docker_20.10.5_armhf.ipk
 
 #install docker file
-echo "installing docker"
-opkg install --force-reinstall $dockerfile
+#echo "installing docker"
+#opkg install --force-reinstall $dockerfile
 
 echo "loading nodered"
 docker load < nodered.tar
