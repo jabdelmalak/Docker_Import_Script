@@ -12,3 +12,4 @@ Then run the script in the sd card directory via
 sh setup.sh
 ```
 
+Once completed, go to your web browser and connect to <IP_address_of_PFC>:1880
