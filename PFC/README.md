@@ -1,1 +1,14 @@
-In order for this process to work, you'll need to ensure that the Docker IPK as well as the Node-Red Image and Volume are all on the root directory of the PFC
+# Instructions
+
+The Script as well as the .tar files should be loaded on the PFC via an SD card. Once you've got the files into the SD card and insert the card into the PFC, you must go into the sd card directory.
+
+```
+cd /media/<sd_card_name>/
+```
+
+Then run the script in the sd card directory via 
+
+```
+sh setup.sh
+```
+
