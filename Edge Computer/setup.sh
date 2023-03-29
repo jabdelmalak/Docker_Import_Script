@@ -22,12 +22,12 @@ echo "loading influxdb"
 docker load < $(pwd)/influxdbimage.tar
 
 echo "starting influxdb"
-docker run --restart unless-stopped -d -p 8086:8086 -v PSA_data:/data influxdb:1.8
+docker run --restart unless-stopped -d -p 8086:8086 -v influx_data:/data influxdb:1.8
 
 echo "setting volume permissions"
 chmod 777 /var/lib/docker/volumes/node_red_data/_data
 chmod 777 /var/lib/docker/volumes/64aafa824594fabeec029d8cefe61729369e0bcbcecffc459881dcda7842ca90
-chmod 777 /var/lib/docker/volumes/PSA_data
+chmod 777 /var/lib/docker/volumes/influx_data
 
 
 
